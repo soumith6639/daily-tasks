@@ -1,0 +1,45 @@
+.container{
+    background-image: url(hamburger.jpg);
+    height:100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end
+}
+.imgcontent{
+    bottom: 0;
+    font-size: xx-large;
+    color: rgb(99, 91, 91);
+}
+.section2{
+    margin: 70px 200px ;
+    display: flex;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.section2a{
+    margin: 50px;
+} 
+span{
+    font-size: xx-large;
+}
+p{
+    line-height: 1.5;
+    font-size: large;
+}
+.section3{
+    display: flex;
+    margin: 70px 200px ;
+}
+.content{
+    margin: 50px;
+}
+.section4{
+    margin: 70px 230px ;
+}
+h3{
+    font-weight: bold;
+    /* font: 1em sans-serif; */
+    
+}

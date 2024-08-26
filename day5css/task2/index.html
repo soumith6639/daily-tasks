@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Templates</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            margin: 5px 150px;
+        }
+        .container div{
+            padding: 5px;
+        }
+        img{
+            height: 380px;
+            width: 280px;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        @media only screen and (width<592px){
+            .container{
+                display: grid;
+                grid-template-columns: auto;
+               
+                justify-content: center;
+            }
+            h1,p{
+            text-align: center;
+            justify-items: center;
+        }
+        }
+        @media only screen and (min-width:593px) and (max-width:700px){
+            .container{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+            }
+            h1,p{
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Food</h1>
+    <div class="container">
+        
+      <div class="items">
+        <img src="sandwich.jpg" alt="">
+        <p style="font-size: x-large;">The Perfect Sandwich, A Real NYC Classic</p>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="items">
+        <img src="steak.jpg" alt="">
+        <p style="font-size: x-large;">Let Me Tell You About This Steak</p>
+        <p>Once again some random text,lorem ipsum text praesent tincidunt ipsum lipsum. </p>
+      </div>
+      <div class="items">
+        <img src="cherries.jpg" alt="">
+        <p style="font-size: x-large;">Cherries, interrupted</p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+            What else?</p>
+      </div>
+      <div class="items">
+        <img src="wine.jpg" alt="">
+        <p style="font-size: x-large;">Once Again, Robust Wine and Vegetable Pasta</p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="items">
+        <img src="popsicle.jpg" alt="">
+        <p style="font-size: x-large;">All I Need Is a Popsicle</p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="items">
+        <img src="salmon.jpg" alt="">
+        <p style="font-size: x-large;">
+            Salmon For Your Skin
+        </p>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="items">
+        <img src="sandwich (1).jpg" alt="">
+        <p style="font-size: x-large;">The Perfect Sandwich, A Real Classic</p>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="items">
+        <img src="croissant.jpg" alt="">
+        <p style="font-size: x-large;">Le French</p>
+        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+</body>
+</html>

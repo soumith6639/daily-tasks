@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            
+            background-color: dimgray;
+            display: grid;
+            height: auto;
+            width: 60vh;
+            grid-template-columns: auto auto auto
+            ;
+            grid-template-rows: 10vh 20vh 20vh 10vh ;
+            gap: 5px;
+            border: 10px solid dimgray;
+        }
+        .item1,.item2,.item3, .item4,.item5,.item6{
+            border: 4px solid black;
+           text-align: center;
+           color: white;
+        }
+        .item1{
+
+            background-color: blueviolet;
+            grid-column: 1/4;
+        }
+        .item3{
+            background-color: rgb(79, 137, 224);
+            grid-column: 2/4;
+        }
+        .item2{
+            background-color: aquamarine;
+            grid-row: 2/4;
+        }
+        .item6{
+            background-color: blueviolet;
+            grid-column: 1/4;
+        }
+        .item4,.item5{
+            background-color: rgb(79, 137, 224);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">sidebar</div>
+        <div class="item3">content-1</div>
+        <div class="item4">content-2</div>
+        <div class="item5">content-3</div>
+        <div class="item6">footer</div>
+    </div>
+</body>
+</html>
