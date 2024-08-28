@@ -1,0 +1,82 @@
+.container{
+            
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 25%;
+    animation-name: loading;
+}
+.translate{
+    display: flex;
+}
+.circle1, .circle2, .circle3{
+    height: 30px;
+    width: 30px;
+    background-color: blueviolet;
+    margin: 10px;
+    border-radius: 50%;
+    animation: loading;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.loading{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.loading div{
+    height: 7px;
+    width: 7px;
+    background-color: #2be27a;
+    margin: 5px;
+    border-radius: 50%;
+    animation: smallcircle;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.loading  .circle4{
+    animation-delay: 100ms;
+}
+.loading  .circle5{
+    animation-delay: 300ms;
+}
+.loading  .circle6{
+    animation-delay: 600ms;
+}
+
+.translate .circle1{
+    
+    animation-delay:200ms;
+    
+  
+}
+.translate .circle2{
+    animation-delay:400ms ;
+    
+}
+.translate .circle3{
+   animation-delay: 650ms;
+}
+
+@keyframes loading{
+    from{ 
+        transform: translateY(0px);
+        
+
+    }
+    to{
+        transform: translateY(-70px);
+    }
+}
+@keyframes smallcircle{
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+        background-color: hsl(146, 44%, 80%);
+    }
+}
